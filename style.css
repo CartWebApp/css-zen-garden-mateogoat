@@ -1,1 +1,32 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
+
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url('backgroundimg.JPEG');
+}
+
+.intro {
+    color:white;text-shadow:.3px .3px 0 rgba(0, 0, 0, 0.5);
+    text-align:center;
+}
+.intro h1{
+    font-size:95px;
+    background-color: rgb(232, 110, 16);
+    text-shadow:1px 1px 0 rgba(0,0,0,0.5);
+    border-radius:30px;
+}
+
+p {
+color:white;
+text-shadow:.3px .3px 0 rgba(0, 0, 0, 0.5);
+text-align:center;
+font-size:20px
+}
+
+a {
+    list-style-type:none;
+    text-decoration:none;
+    color:white;
+    text-shadow:.3px .3px 0 rgba(0, 0, 0, 0.5);
+}
