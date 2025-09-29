@@ -8,7 +8,9 @@ body{
     border:10px solid rgb(197, 0, 0);
     border-radius: 30px;
     margin:80px;
-    padding:10px
+    padding:10px;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 
@@ -21,6 +23,7 @@ body{
     background-color: rgb(232, 16, 128);
     text-shadow:1px 1px 0 rgba(0,0,0,0.5);
     border-radius:30px;
+    display:inline-block
 }
 
 p {
@@ -36,7 +39,11 @@ a {
     text-shadow:.3px .3px 0 rgba(0, 0, 0, 0.5);
 }
  
-div.preamble {
+.preamble {
     display:flex;
-    align-items:center;
+    flex-flow: row wrap;
+}
+
+a:visited {
+    color:beige;
 }
