@@ -21,7 +21,7 @@ body{
 }
 .intro h1{
     font-size:95px;
-    background-color: rgb(232, 16, 128);
+    background-color: rgb(232, 23, 16);
     text-shadow:1px 1px 0 rgba(0,0,0,0.5);
     border-radius:30px;
     display:inline-block;
@@ -88,3 +88,33 @@ text-align: center;
 }
 
 
+div, h3 {
+    color:white;
+    text-shadow :.3px .3px 0 rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+
+}
+
+:not(p) {
+    color:lightgreen;
+    text-decoration: none;
+    text-shadow:.7px .7px 0 rgba(0, 0, 0, 0.5);
+}
+
+p::first-letter {
+    font-style:italic;
+    font-size:110%;
+    text-shadow:.3px .3px 0 rgba(0, 0, 0, 0.5);
+}
+
+#zen-benefits {
+    text-align:right;
+    margin-left:30em;
+    margin-top: 2em;
+}
+
+#zen-requirements {
+    text-align:left;
+    margin-right:30em;
+    margin-top: 2em;
+}
