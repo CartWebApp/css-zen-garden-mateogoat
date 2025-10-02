@@ -4,7 +4,6 @@
 body{
     font-family:Arial, Helvetica, sans-serif;
     background-image: url('backgroundimg.JPEG');
-    display:flex;
     border:10px solid rgb(197, 0, 0);
     border-radius: 30px;
     margin:80px;
@@ -14,6 +13,11 @@ body{
     min-width: fit-content;
 }
 
+.intro h2 {
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:40px;
+}
 
 .intro {
     color:white;text-shadow:.3px .3px 0 rgba(0, 0, 0, 0.5);
@@ -21,11 +25,15 @@ body{
 }
 .intro h1{
     font-size:95px;
-    background-color: rgb(232, 23, 16);
+    color:white;
+   background: #5959d4;
+    background: linear-gradient(90deg, rgba(89, 89, 212, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(0, 0, 0, 1) 100%);
     text-shadow:1px 1px 0 rgba(0,0,0,0.5);
     border-radius:30px;
     display:inline-block;
-    padding:0 20px;
+    padding:20px 20px;
+    margin-bottom:10px;
+    border:10px solid rgb(197, 0, 0);
 }
 
 p {
@@ -41,35 +49,41 @@ a {
 }
  
 .preamble {
-    display:flex;
+    display:grid;
+    grid-template: 1fr 1fr / 1fr 0.5fr 1fr;
+    grid-template-areas:
+    "h . c1"
+    "c2 . c3";
+
+
 
 }
-   
+.preamble > h3 {
+    grid-area: h;
+}
 .preamble > p:first-of-type{
-    margin-right: 10em;
     position: relative;
+}
+.preamble p:nth-of-type(1){
+    grid-area: c1;
+}
+.preamble p:nth-of-type(2){
+    grid-area: c2;
+}
+.preamble p:nth-of-type(3){
+    grid-area: c3;
 }
 
 .preamble > p:first-of-type::after {
-    display:block;
-    content: "";
-    background: url('sunrise.jpg');
-    background-size: 1000px;
-    background-size: cover;
-    background-repeat: no-repeat;
     height:100px;
-    margin: 0 19em;
     min-width: fit-content;
     align-items: center;
-   
-   
     width: 6em;
     position: absolute;
     left: 6em;
     top:0
 
 }
-.preamble > p 
 a:visited {
     color:beige;
 }
@@ -92,6 +106,7 @@ div, h3 {
     color:white;
     text-shadow :.3px .3px 0 rgba(0, 0, 0, 0.5);
     font-size: 40px;
+    margin-top:10px;
 
 }
 
@@ -110,6 +125,21 @@ p::first-letter {
     text-align:right;
     margin-left:30em;
     margin-top: 2em;
+    margin-right:0.8em;
+}
+
+#zen-participation {
+    text-align:left;
+    margin-right:30em;
+    margin-top:2em;
+    margin-left:0.8em
+}
+
+#zen-explanation {
+text-align:right;
+margin-top: 2em;
+margin-right:0.8em;
+margin-left:26em;
 }
 
 #zen-requirements {
@@ -130,9 +160,57 @@ p::first-letter {
 }
 
 :root {
-background-color:lightcoral;
+background: #5959d4;
+background: linear-gradient(90deg, rgba(89, 89, 212, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(0, 0, 0, 1) 100%);
 margin-left: -2.5em;
 margin-right:-2.5em;
 margin-top:-2.5em;
 margin-bottom: -2.5em;
+}
+
+div:empty {
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.extra1 {
+    background-image: url('IMG_0446.JPEG');
+    border-radius:30px;
+    border:10px solid rgb(197, 0, 0);
+    height:530px;
+    width:430px;
+    display:block;
+    position:absolute;
+    background-size:cover;
+    top:900px;
+    left:290px;
+}
+
+.extra2 {
+    background-image: url('IMG_0439.JPEG');
+    border-radius:30px;
+    border:10px solid rgb(197, 0, 0);
+    height:600px;
+    width:700px;
+    display:block;
+    position:absolute;
+    background-size:cover;
+    top:1500px;
+    right:350px;
+}
+
+.extra3 {
+    background-image: url('IMG_0484.JPEG');
+    border-radius:30px;
+    border:10px solid rgb(197, 0, 0);
+    height:400px;
+    width:500px;
+    display:block;
+    position:absolute;
+    background-size:cover;
+    top:2150px;
+    left:290px;
 }
