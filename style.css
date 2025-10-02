@@ -118,3 +118,9 @@ p::first-letter {
     margin-right:30em;
     margin-top: 2em;
 }
+
+#zen-requirements::after {
+    content: "";
+    display: block;
+    clear: both;
+}
