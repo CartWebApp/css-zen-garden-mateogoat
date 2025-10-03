@@ -36,16 +36,12 @@ body{
     border:10px solid rgb(197, 0, 0);
 }
 
-p {
-color:white;
-text-shadow:.3px .3px 0 rgba(0, 0, 0, 0.5);
-font-size:30px
+h3.select {
+    margin-left:20px;
 }
-a {
-    list-style-type:none;
-    text-decoration:none;
-    color:white;
-    text-shadow:.3px .3px 0 rgba(0, 0, 0, 0.5);
+
+h3.archives {
+    margin-left:20px;
 }
  
 .preamble {
@@ -54,9 +50,6 @@ a {
     grid-template-areas:
     "h . c1"
     "c2 . c3";
-
-
-
 }
 .preamble > h3 {
     grid-area: h;
@@ -107,9 +100,31 @@ div, h3 {
     text-shadow :.3px .3px 0 rgba(0, 0, 0, 0.5);
     font-size: 40px;
     margin-top:10px;
-
 }
 
+p {
+color:white;
+text-shadow:.3px .3px 0 rgba(0, 0, 0, 0.5);
+font-size:30px
+}
+a {
+    list-style-type:none;
+    text-decoration:none;
+    color:white;
+    text-shadow:.3px .3px 0 rgba(0, 0, 0, 0.5);
+}
+
+p {
+color:white;
+text-shadow:.3px .3px 0 rgba(0, 0, 0, 0.5);
+font-size:30px
+}
+a {
+    list-style-type:none;
+    text-decoration:none;
+    color:white;
+    text-shadow:.3px .3px 0 rgba(0, 0, 0, 0.5);
+}
 :not(p) {
     color:lightgreen;
     text-decoration: none;
@@ -156,7 +171,7 @@ margin-left:26em;
 }
 
 :hover {
-    color:lightskyblue
+    color:rgb(6, 217, 210)
 }
 
 :root {
@@ -168,9 +183,9 @@ margin-top:-2.5em;
 margin-bottom: -2.5em;
 }
 
-div:empty {
 
-}
+
+
 
 * {
     box-sizing: border-box;
@@ -211,6 +226,51 @@ div:empty {
     display:block;
     position:absolute;
     background-size:cover;
-    top:2150px;
-    left:290px;
+    top:2060px;
+    left:370px;
+}
+
+.extra4 {
+    background-image: url('sunrise.jpg');
+    border-radius:30px;
+    border:10px solid rgb(197, 0, 0);
+    height:400px;
+    width:500px;
+    display:block;
+    position:absolute;
+    background-size:cover;
+    top:520px;
+    left:1010px
+}
+
+.extra5 {
+    background-image: url('DJI_20250128171750_0090_D.JPG');
+    border-radius:30px;
+    border:10px solid rgb(197, 0, 0);
+    height:830px;
+    width:730px;
+    display:block;
+    position:absolute;
+    background-size:cover;
+    top:2550px;
+    left:1500px;
+}
+
+h1::selection {
+    color:rgb(6, 217, 210)
+}
+
+ul:only-child {
+    font-size:40px;
+    gap:15px;
+}
+
+ul:last-child {
+    list-style-type: none;
+    margin-left:-18px;
+}
+
+
+a.zen-validate-html {
+    margin-left:20px;
 }
