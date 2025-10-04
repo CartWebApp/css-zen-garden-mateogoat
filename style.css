@@ -33,7 +33,6 @@ div[role="article"]{
     text-align:center;
 }
 .intro h1{
-    font-size:95px;
     color:white;
    background: #5959d4;
     background: linear-gradient(90deg, rgba(89, 89, 212, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(0, 0, 0, 1) 100%);
@@ -230,6 +229,7 @@ content:"";
     background-size:cover;
     top:0px;
     left:0%;
+    position:absolute;
     transform:translateX(calc(160% + 15rem));
 }
 
@@ -270,7 +270,7 @@ margin-bottom: -2.5em;
     display:block;
     position:absolute;
     background-size:cover;
-    top:-0px;
+    top:-90px;
     left:0%;
     transform:translateX(calc(-210% + 15rem));
 }
@@ -337,4 +337,9 @@ a.zen-validate-html {
 
 a:active {
     background-color: red;
+}
+
+h1::first-line {
+    font-size:150px;
+    text-shadow:5px 5px 0 rgba(0, 0, 0, 0.5);
 }
